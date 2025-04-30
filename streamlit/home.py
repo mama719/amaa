@@ -56,7 +56,7 @@ def app():
                         with st.container(border=True):
                             a += 1
                             st.header(f"Task_NO.{a}")
-                            st.subheader(f"{res["tasks"]}")
+                            st.subheader(f"{res['tasks']}")
                             col1 , col2 = st.columns(2)
                             col1.button("Delete Task" , id(a) , on_click=d , args=([res["_id"]]) )
                             col2.button("Update Task" , id(a + 100) , on_click=u , args=([res["_id"]]) ) 
